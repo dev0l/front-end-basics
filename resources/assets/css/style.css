@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  line-height: 1.5;
+  background-color: whitesmoke;
+}
+
+section {
+  padding: 4rem;
+}
+
+/** Header START **/
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #af931f;
+}
+
+/** Header END **/
+
+.headline,
+.intro {
+  text-align: center;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-family: "Poppins";
+  /* font-size: medium; */
+  font-weight: 400;
+}
+
+/** Unvisited link **/
+a {
+  color: #ffd402;
+  text-decoration: none;
+}
+
+/** Visited link **/
+a:visited {
+  color: #ffd402;
+}
+
+/** Mouse over link **/
+a:hover {
+  color: #ceaf25;
+}
+
+/** Selected link **/
+a:active {
+  color: #ffd402;
+}
+
+.button {
+  /* display: block; */
+  width: 115px;
+  height: 25px;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  /* color: white; */
+  font-weight: bold;
+  line-height: 25px;
+}
+
+code {
+  font-family: Consolas, "courier new";
+  background-color: #f1f1f1;
+  padding: 2px;
+  /*font-size: 105%;*/
+}

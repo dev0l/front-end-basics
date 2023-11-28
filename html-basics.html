@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="resources/assets/css/style.css">
+  <script src="resources/assets/js/main.js" defer></script>
+
+  <title>HTML Basics</title>
+
+</head>
+
+<body>
+
+  <!-- Start -->
+
+  <!-- This is a comment and does not show on the page. -->
+
+  <!--
+    This is also a valid way
+    to make comments
+    on muliple lines.
+  -->
+
+  <header>
+
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vs-code-install.html">Visual Studio Code</a></li>
+        <li><a href="html-basics.html">Html</a></li>
+        <li><a href="#">Css</a></li>
+        <li><a href="#">Javascript</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section>
+
+      <div class="container">
+
+        <!-- <h1 style="text-align: center;">Introduction to Html</h1> -->
+        <h1 class="headline">HTML Basics</h1>
+
+        <hr>
+
+        <h2>What is HTML?</h2>
+
+        <p>HTML stands for Hyper Text Markup Language and is the standard markup language for creating Web pages.
+          It describes the structure of a Web page and consists of a series of elements which tell the browser how to
+          display the content.
+          Elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+        </p>
+        <p>
+          A HTML file is just a document with hte file extension .html containing HTML code. You can use any editor to
+          create HTML, even notepad but that takes complete knowledge and a lot more work.
+          To make it easier we use an IDE (Integrted Development Environment).
+        </p>
+
+        <h3>HTML Page Structure</h3>
+
+        <div class="ws-grey" style="width:99%;border:1px solid grey;padding:3px;margin:0;">&lt;html&gt;
+          <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;
+            <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Page title&lt;/title&gt;
+            </div>
+            &lt;/head&gt;
+          </div>
+          <div class="ws-grey" style="width:90%;border:1px solid grey;padding:3px;margin:20px;">&lt;body&gt;
+            <div class="w3-white" style="width:90%;border:1px solid grey;padding:3px;margin:20px;">
+              <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;This is a
+                heading&lt;/h1&gt;</div>
+              <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is a
+                paragraph.&lt;/p&gt;</div>
+              <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is another
+                paragraph.&lt;/p&gt;</div>
+            </div>
+            &lt;/body&gt;
+          </div>
+          &lt;/html&gt;
+        </div>
+
+        <br>
+
+        <hr>
+
+        <ol>
+
+          <li>
+            <h3>Create a HTML file:</h3>
+            <ol type="a">
+              <li>
+                <p>
+                  We can create a new file with notepad. Click <strong>Save As</strong> and name it "index.html" as
+                  <strong>File name:</strong>.
+                  Make sure that "All files" is selected as <strong>Save as type:</strong> and that "UTF-8" is selected
+                  as
+                  <strong>Encoding:</strong> then click <strong>Save</strong>.
+                  We now see that the file is a HTML file and if you double click it you will load it in the browser.
+                </p>
+              </li>
+              <li>
+                <p>
+                  We can also create a new html file in our IDE, which is a lot easier. If you are not familiar with
+                  "Visual Studio Code",
+                  check out the "Get Started With Visual Studio" guide <a href="vs-code-guide.html">here..</a>
+                </p>
+              </li>
+            </ol>
+          </li>
+
+          <li>
+            <h3>Start a simple HTML document:</h3>
+            <p>
+              In Visual Studio Code you can simply create a html document by typing <em>html:5</em> and
+              pressing <strong>Tab</strong> on the keyboard. This will generate the <strong>head</strong> and
+              <strong>body</strong> of the HTML document.
+            </p>
+            It will look somethng like this:
+          </li>
+
+        </ol>
+
+        <div class="html-head">
+          <pre>
+            <code>&lt;!DOCTYPE html&gt;</code> &lt;!-- This declaration is not an HTML tag. It is an "information" to the browser about what document type to expect. --&gt;
+            <code>&lt;html lang="en"&gt;</code> &lt;!-- This tag represents the root of an HTML document. It is the container for all other HTML elements. --&gt;
+            <code>&lt;head&gt;</code> &lt;!-- This element is a container for metadata (data about data). --&gt;
+              <code>&lt;meta charset="UTF-8"&gt;</code> &lt;!-- This tag defines metadata about an HTML document. Metadata is data (information) about data. --&gt;
+              <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+              <code>&lt;title&gt;Document&lt;/title&gt;</code> &lt;!-- This element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab. --&gt;
+            <code>&lt;/head&gt;</code>
+            <code>&lt;body&gt;</code> &lt;!-- This tag defines the document's body. It contains all the contents of an HTML document. --&gt;
+
+            <code>&lt;/body&gt;</code>
+            <code>&lt;/html&gt;</code>
+          </pre>
+        </div>
+
+        <ol start="3">
+          <li>
+            <h3>Add your first content to the document:</h3>
+            <p>
+              First we have to understand what an HTML element is. As seen above, an element is defined by a start tag:
+              followed by some content followed by an end tag. The end tag, or closing tag, always starts with a forward
+              slash "/".
+            </p>
+            <code>&lt;tagname&gt; Content goes here... &lt;/tagname&gt;</code>
+            <p>The HTML <strong>element</strong> is everything from the start tag to the end tag.</p>
+            <ol type="a">
+              <li>
+                <h3>HTML Headings and Paragraphs</h3>
+                <p>
+                  HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags. &lt;h1&gt; defines the most
+                  important heading. &lt;h6&gt; defines the least important heading.
+                </p>
+                <p>HTML paragraphs are defined with the &lt;p&gt; tag.</p>
+                <p>
+                  As an example, let's create a <strong>heading</strong> and a <strong>paragraph</strong> inside the
+                  <strong>body</strong>:
+                </p>
+                <div class="my-first-example">
+                  <code>&lt;body&gt;</code>
+                  <br>
+                  <code>&lt;h1&gt;My first heading&lt;/h1&gt;</code>
+                  <br>
+                  <code>&lt;p&gt;My first paragraph&lt;/p&gt;</code>
+                  <br>
+                  <code>&lt;/body&gt;</code>
+                </div>
+              </li>
+              <li>
+                <h3>HTML Links</h3>
+                <p>HTML links are defined with the &lt;a&gt; tag:</p>
+                <code>&lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;</code>
+                <p><em>The link's destination is specified in the <code>href</code> attribute.</em></p>
+                <p><em>Attributes are used to provide additional information about HTML elements. We will learn more
+                    about
+                    attributes later.</em></p>
+              </li>
+              <li>
+                <h3>HTML Images</h3>
+                <p>HTML images are defined with the &lt;img&gt; tag.</p>
+                <code>&lt;img src="skaggbyran.jpg" alt="skaggbyran.se" width="104" height="142"&gt;</code>
+                <p><em>The source file <code>src</code>, alternative text <code>alt</code>, <code>width</code>, and
+                    <code>height</code> are provided as attributes.</em></p>
+              </li>
+            </ol>
+          </li>
+        </ol>
+
+      </div> <!--container -->
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
