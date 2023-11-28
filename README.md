@@ -1,2 +1,2 @@
-# front-End Basics
+# Front-End Basics
 Introduction to the basics of Front End Development
