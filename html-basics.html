@@ -126,30 +126,36 @@
 
         <div class="html-head">
           <pre>
-            <code>&lt;!DOCTYPE html&gt;</code> &lt;!-- This declaration is not an HTML tag. It is an "information" to the browser about what document type to expect. --&gt;
-            <code>&lt;html lang="en"&gt;</code> &lt;!-- This tag represents the root of an HTML document. It is the container for all other HTML elements. --&gt;
-            <code>&lt;head&gt;</code> &lt;!-- This element is a container for metadata (data about data). --&gt;
+          <code>&lt;!DOCTYPE html&gt;</code> &lt;!-- This declaration is not an HTML tag. It is an "information" to the browser about what document type to expect. --&gt;
+          <code>&lt;html lang="en"&gt;</code> &lt;!-- This tag represents the root of an HTML document. It is the container for all other HTML elements. --&gt;
+          <code>&lt;head&gt;</code> &lt;!-- This element is a container for metadata (data about data). --&gt;
               <code>&lt;meta charset="UTF-8"&gt;</code> &lt;!-- This tag defines metadata about an HTML document. Metadata is data (information) about data. --&gt;
               <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
               <code>&lt;title&gt;Document&lt;/title&gt;</code> &lt;!-- This element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab. --&gt;
-            <code>&lt;/head&gt;</code>
-            <code>&lt;body&gt;</code> &lt;!-- This tag defines the document's body. It contains all the contents of an HTML document. --&gt;
+          <code>&lt;/head&gt;</code>
+          <code>&lt;body&gt;</code> &lt;!-- This tag defines the document's body. It contains all the contents of an HTML document. --&gt;
 
-            <code>&lt;/body&gt;</code>
-            <code>&lt;/html&gt;</code>
-          </pre>
+          <code>&lt;/body&gt;</code>
+          <code>&lt;/html&gt;</code>
+        </pre>
         </div>
 
         <ol start="3">
           <li>
             <h3>Add your first content to the document:</h3>
             <p>
-              First we have to understand what an HTML element is. As seen above, an element is defined by a start tag:
-              followed by some content followed by an end tag. The end tag, or closing tag, always starts with a forward
-              slash "/".
+              First we have to understand what an HTML element is. As seen above, an element is defined by a
+              <strong>opening</strong> tag (start tag):
+              followed by some content followed by a <strong>closing</strong> tag (end tag). The
+              <strong>closing</strong> tag always starts with a forward
+              slash <strong>"/"</strong>.
             </p>
             <code>&lt;tagname&gt; Content goes here... &lt;/tagname&gt;</code>
-            <p>The HTML <strong>element</strong> is everything from the start tag to the end tag.</p>
+            <p>The HTML <strong>element</strong> is everything from the <strong>opening</strong> (start) tag to the
+              <strong>closing</strong> (end) tag.
+            </p>
+            <p><code>&lt;tagname&gt;</code> : <em><strong>Opening</strong> tag</em></p>
+            <p><code>&lt;/tagname&gt;</code> : <em><strong>Closing</strong> tag</em></p>
             <ol type="a">
               <li>
                 <h3>HTML Headings and Paragraphs</h3>
@@ -163,13 +169,15 @@
                   <strong>body</strong>:
                 </p>
                 <div class="my-first-example">
-                  <code>&lt;body&gt;</code>
-                  <br>
-                  <code>&lt;h1&gt;My first heading&lt;/h1&gt;</code>
-                  <br>
-                  <code>&lt;p&gt;My first paragraph&lt;/p&gt;</code>
-                  <br>
-                  <code>&lt;/body&gt;</code>
+                  <pre>
+  <code>&lt;body&gt;</code>
+
+    <code>&lt;h1&gt;My first heading&lt;/h1&gt;</code>
+
+    <code>&lt;p&gt;My first paragraph&lt;/p&gt;</code>
+
+  <code>&lt;/body&gt;</code>
+</pre>
                 </div>
               </li>
               <li>
@@ -178,8 +186,7 @@
                 <code>&lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;</code>
                 <p><em>The link's destination is specified in the <code>href</code> attribute.</em></p>
                 <p><em>Attributes are used to provide additional information about HTML elements. We will learn more
-                    about
-                    attributes later.</em></p>
+                    about attributes later.</em></p>
               </li>
               <li>
                 <h3>HTML Images</h3>
@@ -197,25 +204,61 @@
             <h3>Nested HTML Elements:</h3>
             <p>HTML elements can be nested (this means that elements can contain other elements).
               All HTML documents consist of nested HTML elements.</p>
-            <p>For example, if we take a look at below example:</p>
+            <p>Let's take a look at below example:</p>
+
+            <div class="html-head">
+              <pre>
+  <code>&lt;!DOCTYPE html&gt;</code>
+  <code>&lt;html&gt;</code>
+  <code>&lt;head&gt;</code>
+      <code>&lt;meta charset="UTF-8"&gt;</code>
+      <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+      <code>&lt;title&gt;Document&lt;/title&gt;</code>
+  <code>&lt;/head&gt;</code>
+  <code>&lt;body&gt;</code>
+
+      <code>&lt;h1&gt;My first heading&lt;/h1&gt;</code>
+      <code>&lt;p&gt;My first paragraph&lt;/p&gt;</code>
+
+  <code>&lt;/body&gt;</code>
+  <code>&lt;/html&gt;</code>
+</pre>
+            </div>
+
+            <p>This example contains six elements <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>,
+              <code>&lt;meta&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>.
+            </p>
+            <p>The <code>&lt;meta&gt;</code> tag is nested inside the <code>&lt;head&gt; element</code></p>
+            <p>The <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> elements are nested inside the
+              <code>&lt;body&gt; element</code>
+            </p>
+            <p><em>And remember, most elements needs to have a <strong>closing</strong> tag</em></p>
+
           </li>
+          <ol type="a">
+            <li>
+              <p>Let us try nesting a link inside a <code>&lt;div&gt;</code> element:</p>
+              <p>The <code>&lt;div&gt;</code> tag defines a division or a section in an HTML document and is used as a
+                container for HTML elements. Any sort of content can be put inside this tag.
+              </p>
+              <pre>
+  <code>&lt;body&gt;</code>
+
+      <code>&lt;h1&gt;My first heading&lt;/h1&gt;</code>
+      <code>&lt;p&gt;My first paragraph&lt;/p&gt;</code>
+
+      <code>&lt;div&gt;</code>
+          <code>&lt;a href="https://www.skaggbyran.se/"&gt;My first paragraph&lt;/a&gt;</code>
+      <code>&lt;/div&gt;</code>
+
+  <code>&lt;/body&gt;</code>
+</pre>
+
+            </li>
+          </ol>
         </ol>
 
-        <div class="html-head">
-          <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code>&lt;html lang="en"&gt;</code>
-            <code>&lt;head&gt;</code>
-              <code>&lt;meta charset="UTF-8"&gt;</code>
-              <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
-              <code>&lt;title&gt;Document&lt;/title&gt;</code>
-            <code>&lt;/head&gt;</code>
-            <code>&lt;body&gt;</code>
 
-            <code>&lt;/body&gt;</code>
-            <code>&lt;/html&gt;</code>
-          </pre>
-        </div>
 
       </div> <!--container -->
 
