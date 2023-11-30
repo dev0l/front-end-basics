@@ -125,6 +125,7 @@
         </ol>
 
         <div class="html-head">
+
           <pre>
           <code>&lt;!DOCTYPE html&gt;</code> &lt;!-- This declaration is not an HTML tag. It is an "information" to the browser about what document type to expect. --&gt;
           <code>&lt;html lang="en"&gt;</code> &lt;!-- This tag represents the root of an HTML document. It is the container for all other HTML elements. --&gt;
@@ -138,6 +139,7 @@
           <code>&lt;/body&gt;</code>
           <code>&lt;/html&gt;</code>
         </pre>
+
         </div>
 
         <ol start="3">
@@ -169,6 +171,7 @@
                   <strong>body</strong>:
                 </p>
                 <div class="my-first-example">
+
                   <pre>
   <code>&lt;body&gt;</code>
 
@@ -178,12 +181,16 @@
 
   <code>&lt;/body&gt;</code>
 </pre>
+
                 </div>
               </li>
               <li>
                 <h3>HTML Links</h3>
-                <p>HTML links are defined with the &lt;a&gt; tag:</p>
+                <p>
+                  HTML links are defined with the <code>&lt;a&gt;</code> tag, also called <strong>"anchor"</strong>:
+                </p>
                 <code>&lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;</code>
+                <p><em>The clickable link text goes between the <code>&lt;a&gt;</code> tags</em></p>
                 <p><em>The link's destination is specified in the <code>href</code> attribute.</em></p>
                 <p><em>Attributes are used to provide additional information about HTML elements. We will learn more
                     about attributes later.</em></p>
@@ -197,16 +204,14 @@
               </li>
             </ol>
           </li>
-        </ol>
-
-        <ol start="4">
           <li>
-            <h3>Nested HTML Elements:</h3>
+            <h3>Nested HTML Elements</h3>
             <p>HTML elements can be nested (this means that elements can contain other elements).
               All HTML documents consist of nested HTML elements.</p>
             <p>Let's take a look at below example:</p>
 
             <div class="html-head">
+
               <pre>
   <code>&lt;!DOCTYPE html&gt;</code>
   <code>&lt;html&gt;</code>
@@ -228,19 +233,21 @@
             <p>This example contains six elements <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>,
               <code>&lt;meta&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>.
             </p>
-            <p>The <code>&lt;meta&gt;</code> tag is nested inside the <code>&lt;head&gt; element</code></p>
+            <p>The <code>&lt;meta&gt;</code> tag is nested inside the <code>&lt;head&gt;</code> element</p>
             <p>The <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> elements are nested inside the
-              <code>&lt;body&gt; element</code>
+              <code>&lt;body&gt;</code> element.
             </p>
             <p><em>And remember, most elements needs to have a <strong>closing</strong> tag</em></p>
 
           </li>
           <ol type="a">
             <li>
-              <p>Let us try nesting a link inside a <code>&lt;div&gt;</code> element:</p>
+              <h3>Nesting</h3>
+              <p>Let us try nesting a link inside a <code>&lt;div&gt;</code> element.</p>
               <p>The <code>&lt;div&gt;</code> tag defines a division or a section in an HTML document and is used as a
                 container for HTML elements. Any sort of content can be put inside this tag.
               </p>
+
               <pre>
   <code>&lt;body&gt;</code>
 
@@ -248,17 +255,63 @@
       <code>&lt;p&gt;My first paragraph&lt;/p&gt;</code>
 
       <code>&lt;div&gt;</code>
-          <code>&lt;a href="https://www.skaggbyran.se/"&gt;My first paragraph&lt;/a&gt;</code>
+          <code>&lt;a href="https://www.skaggbyran.se/"&gt;This is a link&lt;/a&gt;</code>
       <code>&lt;/div&gt;</code>
 
   <code>&lt;/body&gt;</code>
 </pre>
 
+              <p>
+                Inside the <code>&lt;div&gt;</code> element we have put an anchor element:
+                <code>&lt;a&gt;</code> tag. This tag defines a hyperlink, which is used to link from one page to
+                another.
+              </p>
+              <p>
+                The most important <strong>attribute</strong> of the <code>&lt;a&gt;</code> element is the
+                <code>href</code> <strong>attribute</strong>, which specifies the link's destination.
+              </p>
+              <p>Before we move on, let us have a closer look on <strong>attributes</strong>.</p>
+            </li>
+          </ol>
+          <li>
+            <h3>HTML Attributes</h3>
+            <p>All HTML elements can have <strong>attributes</strong>.</p>
+            <p>
+              Attributes provide <strong>additional information</strong> about elements and are always specified in the
+              <strong>opening</strong> tag.
+            </p>
+            <p>Attributes usually come in name/value pairs like: <strong>name="value"</strong></p>
+          </li>
+          <ol type="a">
+            <li>
+              <h3>The href Attribute</h3>
+              <p>The href attribute specifies the URL of the page or location the link points to.</p>
+              <p>
+                For example, the link <code>&lt;a href="https://www.skaggbyran.se/"&gt;Visit Skäggbyrån&lt;/a&gt;</code>
+                points to Skäggbyrån website.
+              </p>
+              <p><em>This is called an <strong>Absolute URL</strong>.</em></p>
+              <li>
+                <h3>The src Attribute</h3>
+                <p>
+                  The <code>&lt;img&gt;</code> tag is used to embed an image in an HTML page. The <code>src</code> 
+                  attribute specifies the path to the image to be displayed:
+                </p>
+                <p><code>&lt;img src="skaggbyran.jpg" alt="skaggbyran.se" width="104" height="142"&gt;</code></p>
+              </li>
+
+
+              <!-- <p><em>There are two ways to specify URLs.</em></p>
+              <ol type="1" start="1">
+                <li><p>Absolute URL - Link to a source on external website. Example: </p>
+                  <p>src="https://www.w3schools.com/images/img_girl.jpg"</p>.
+                </li>
+              </ol> -->
+              
+
             </li>
           </ol>
         </ol>
-
-
 
       </div> <!--container -->
 
