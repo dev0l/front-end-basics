@@ -40,6 +40,62 @@ nav li a {
   text-decoration: none;
 }
 
+/*** Dropdown test ***/
+
+/* #navbar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#navbar li {
+  float: left;
+  display: block;
+  background: #4B4B4B;
+  position: relative;
+  z-index: 500;
+  margin: 0 1px;
+}
+
+#navbar li a {
+  display: block;
+  padding: 6px 5px 0 5px;
+  font-weight: 700;
+  height: 20px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+#navbar ul {
+  position: absolute;
+  left: 0;
+  display: none;
+  margin: 0 0 0 -1px;
+  padding: 0;
+  list-style: none;
+}
+
+#navbar ul li {
+  float: left;
+  border-top: 1px solid #fff;
+  width: 100%;
+  white-space: nowrap;
+}
+
+#navbar ul a {
+  display: block;
+  height: 15px;
+  padding:  6px 5px;
+  color: #fff;
+  text-align: left;
+}
+
+#nav a:hover {
+  text-decoration: none;
+  background-color: #F86808;
+} */
+
 /* Change the link color to #111 (black) on hover */
 nav li a:hover {
   background-color: #111;

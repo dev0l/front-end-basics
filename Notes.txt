@@ -1,0 +1,19 @@
+* Create and name files (pages) and folders
+* Folder structure
+* Clear Language (naming and codewise)
+* "Copy/Paste this code"
+* Exercises
+* Semantics
+* Indentation (built in IDE, recommended 2 spaces)
+* Comments
+* Empty Elements (No closing tag e.g <img>)
+* Multiple Rows (e.g. 	<p>
+			  text goes here...
+			</p>
+		)
+
+
+
+* Trello
+* Github + Git
+* General info (school work e.g Agile Development Methods etc.)
