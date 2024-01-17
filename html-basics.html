@@ -69,6 +69,8 @@
           To make it easier we use an IDE (Integrted Development Environment).
         </p>
 
+        <hr>
+
         <h3>HTML Page Structure</h3>
 
         <div class="ws-grey" style="width:99%;border:1px solid grey;padding:3px;margin:0;">&lt;html&gt;
@@ -90,10 +92,6 @@
           </div>
           &lt;/html&gt;
         </div>
-
-        <br>
-
-        <hr>
 
         <ol>
           <li>
@@ -131,7 +129,6 @@
         </ol>
 
         <div class="html-head">
-
           <pre>
           <code>&lt;!DOCTYPE html&gt;</code> &lt;!-- This declaration is not an HTML tag. It is an "information" to the browser about what document type to expect. --&gt;
           <code>&lt;html lang="en"&gt;</code> &lt;!-- This tag represents the root of an HTML document. It is the container for all other HTML elements. --&gt;
@@ -144,8 +141,7 @@
 
           <code>&lt;/body&gt;</code>
           <code>&lt;/html&gt;</code>
-        </pre>
-
+          </pre>
         </div>
 
         <ol start="3">
@@ -159,8 +155,11 @@
               slash <strong>"/"</strong>.
             </p>
             <code>&lt;tagname&gt; Content goes here... &lt;/tagname&gt;</code>
-            <p>The HTML <strong>element</strong> is everything from the <strong>opening</strong> (start) tag to the
-              <strong>closing</strong> (end) tag.
+            <p>
+              <em>
+                The HTML <strong>element</strong> is everything from the <strong>opening</strong> (start) tag to the
+                <strong>closing</strong> (end) tag.
+              </em>
             </p>
             <p><code>&lt;tagname&gt;</code> : <em><strong>Opening</strong> tag</em></p>
             <p><code>&lt;/tagname&gt;</code> : <em><strong>Closing</strong> tag</em></p>
@@ -168,27 +167,31 @@
               <li>
                 <h3>HTML Headings and Paragraphs</h3>
                 <p>
-                  HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags. &lt;h1&gt; defines the most
-                  important heading. &lt;h6&gt; defines the least important heading.
+                  HTML headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags.
+                  <code>&lt;h1&gt;</code> defines the most
+                  important heading. <code>&lt;h6&gt;</code> defines the least important heading.
                 </p>
                 <p>HTML paragraphs are defined with the &lt;p&gt; tag.</p>
                 <p>
                   As an example, let's create a <strong>heading</strong> and a <strong>paragraph</strong> inside the
                   <strong>body</strong>:
                 </p>
+
                 <div class="my-first-example">
 
+                  <!-- Preformatted text <pre> considers white space which means we have to reconsider indentation -->
+
                   <pre>
-  <code>&lt;body&gt;</code>
+<code>&lt;body&gt;</code>
 
-    <code>&lt;h1&gt;My first heading&lt;/h1&gt;</code>
+  <code>&lt;h1&gt;My first heading&lt;/h1&gt;</code>
 
-    <code>&lt;p&gt;My first paragraph&lt;/p&gt;</code>
+  <code>&lt;p&gt;My first paragraph&lt;/p&gt;</code>
 
-  <code>&lt;/body&gt;</code>
-</pre>
-
+<code>&lt;/body&gt;</code>
+                  </pre>
                 </div>
+
               </li>
               <li>
                 <h3>HTML Links</h3>
@@ -217,7 +220,6 @@
             <p>Let's take a look at below example:</p>
 
             <div class="html-head">
-
               <pre>
   <code>&lt;!DOCTYPE html&gt;</code>
   <code>&lt;html&gt;</code>
@@ -233,28 +235,36 @@
 
   <code>&lt;/body&gt;</code>
   <code>&lt;/html&gt;</code>
-</pre>
+              </pre>
             </div>
 
-            <p>This example contains six elements <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>,
-              <code>&lt;meta&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>.
+            <p>
+              <em>
+                This example contains six elements <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>,
+                <code>&lt;meta&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;</code> and
+                <code>&lt;p&gt;</code>.
+              </em>
             </p>
-            <p>The <code>&lt;meta&gt;</code> tag is nested inside the <code>&lt;head&gt;</code> element</p>
-            <p>The <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> elements are nested inside the
-              <code>&lt;body&gt;</code> element.
+            <p><em>The <code>&lt;meta&gt;</code> tag is nested inside the <code>&lt;head&gt;</code> element</em></p>
+            <p>
+              <em>
+                The <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> elements are nested inside the
+                <code>&lt;body&gt;</code> element.
+              </em>
             </p>
-            <p><em>And remember, most elements needs to have a <strong>closing</strong> tag</em></p>
+            <p><em>And remember, most elements needs a <strong>closing</strong> tag</em></p>
 
           </li>
           <ol type="a">
             <li>
               <h3>Nesting</h3>
-              <p>Let us try nesting a link inside a <code>&lt;div&gt;</code> element.</p>
+              <p>Let us try nesting a link (anchor) inside a <code>&lt;div&gt;</code> element.</p>
               <p>The <code>&lt;div&gt;</code> tag defines a division or a section in an HTML document and is used as a
                 container for HTML elements. Any sort of content can be put inside this tag.
               </p>
 
-              <pre>
+              <div class="nesting-link">
+                <pre>
   <code>&lt;body&gt;</code>
 
       <code>&lt;h1&gt;My first heading&lt;/h1&gt;</code>
@@ -265,18 +275,23 @@
       <code>&lt;/div&gt;</code>
 
   <code>&lt;/body&gt;</code>
-</pre>
+                </pre>
+              </div>
 
               <p>
-                Inside the <code>&lt;div&gt;</code> element we have put an anchor element:
-                <code>&lt;a&gt;</code> tag. This tag defines a hyperlink, which is used to link from one page to
-                another.
+                <em>
+                  Inside the <code>&lt;div&gt;</code> element we have put an anchor element:
+                  <code>&lt;a&gt;</code> tag. This tag defines a hyperlink, which is used to link from one page to
+                  another.
+                </em>
               </p>
               <p>
-                The most important <strong>attribute</strong> of the <code>&lt;a&gt;</code> element is the
-                <code>href</code> <strong>attribute</strong>, which specifies the link's destination.
+                <em>
+                  The most important <strong>attribute</strong> of the <code>&lt;a&gt;</code> element is the
+                  <code>href</code> <strong>attribute</strong>, which specifies the link's destination.
+                </em>
               </p>
-              <p>Before we move on, let us have a closer look on <strong>attributes</strong>.</p>
+              <p><em>Before we move on, let us have a closer look on <strong>attributes</strong>.</em></p>
             </li>
           </ol>
           <li>
@@ -298,10 +313,15 @@
               </p>
               <p><em>This is called an <strong>Absolute URL</strong> (the full URL including protocol, optional
                   subdomain, domain and path).</em></p>
-              <p>There are two ways to specify URL:</p>
-              <p><strong>Absolute URL</strong> (as shown above) and <strong>Relative URL</strong> (as shown below).
-                The relative URL only includes the path assuming it uses the same protocol, subdomain and domain as the
-                page it's on.</p>
+              <p><em>There are two ways to specify URL:</em></p>
+              <p>
+                <em>
+                  <strong>Absolute URL</strong> (as shown above) and <strong>Relative URL</strong> (as shown below).
+                  The relative URL only includes the path assuming it uses the same protocol, subdomain and domain as
+                  the page it's on.
+                </em>
+              </p>
+              <p><em>It is usually best to use relative URLs. They will not break if you change domain.</em></p>
             <li>
               <h3>The src Attribute</h3>
               <p>
@@ -309,8 +329,26 @@
                 attribute specifies the path to the image to be displayed:
               </p>
               <p><code>&lt;img src="skaggbyran.jpg" alt="skaggbyran.se" width="104" height="142"&gt;</code></p>
-            </li>
+              <p>
+                <em>
+                  In above example we also use the <code>alt</code> <strong>attribute</strong> which specifies an
+                  alternate text for an
+                  image, if the image for some reason cannot be displayed. It is also used for screen readers.
+                </em>
+              </p>
+              <p>
+                <em>
+                  Furthermore, we use <code>width</code> and <code>height</code> <strong>attributes</strong> to specify
+                  the width and height of the image (in pixels). This can also be specified with
+                  <strong>Styling</strong> using <strong>CSS</strong> which we will cover in the <strong>CSS</strong>
+                  chapter.
+                </em>
+              </p>
+              <p><em>Note that there is pros and cons using these different opptions.</em></p>
 
+              <!-- CONTINUE @ https://www.w3schools.com/html/html_attributes.asp -->
+
+            </li>
             </li>
           </ol>
         </ol>
