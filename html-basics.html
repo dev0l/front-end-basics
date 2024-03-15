@@ -32,7 +32,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="vs-code-install.html">Visual Studio Code</a></li>
         <li><a href="html-basics.html">Html</a></li>
-        <li><a href="#">Css</a></li>
+        <li><a href="css-basics.html">Css</a></li>
         <li><a href="#">Javascript</a></li>
         <!-- <li>
           <a href="">Misc.</a>
@@ -306,7 +306,7 @@
           </li>
           <ol type="a">
             <li>
-              <h3>The href Attribute</h3>
+              <h3>The <code>href</code> Attribute</h3>
               <p>The href attribute specifies the URL of the page or location the link points to.</p>
               <p>
                 For example, the link <code>&lt;a href="https://www.skaggbyran.se/"&gt;Visit Skäggbyrån&lt;/a&gt;</code>
@@ -326,7 +326,7 @@
             </li>
 
             <li>
-              <h3>The src Attribute</h3>
+              <h3>The <code>src</code> Attribute</h3>
               <p>
                 The <code>&lt;img&gt;</code> tag is used to embed an image in an HTML page. The <code>src</code>
                 attribute specifies the path to the image to be displayed:
@@ -335,8 +335,8 @@
               <p>
                 <em>
                   In above example we also use the <code>alt</code> <strong>attribute</strong> which specifies an
-                  alternate text for an
-                  image, if the image for some reason cannot be displayed. It is also used for screen readers.
+                  alternate text for an image if the image for some reason cannot be displayed.
+                  It is also used for screen readers.
                 </em>
               </p>
               <p>
@@ -351,23 +351,69 @@
             </li>
 
             <li>
-              <h3>The style Attribute</h3>
+              <h3>The <code>style</code> Attribute</h3>
               <p>
                 The <code>style</code> attribute is used to add styles to elements.
-                Styling your page or application is essential for the UX (User Experience).
+                Styling your page or application is essential for the <strong>UX (User Experience)</strong>.
               </p>
               <p>
                 <em>
-                  We will not go into UX here as there is a lot to cover but it is highly recommended that you learn
-                  more about it.
+                  We will not go into <strong>UX</strong> here as there is a lot to cover but it is highly recommended
+                  that you learn more about it.
                 </em>
               </p>
-              As mentioned above there are different ways to add styles. Attributes like
-              <code>width</code> and <code>height</code> differ from other styles as they can be added directly to the
-              element in HTML while styles such as color, font, size, and more, needs the <code>style</code> attribute.....
+
+              <p><code>&lt;p style="color:red; font-weight: 600;">This is a red and bold paragraph.&gt;</code></p>
+
+              <p>
+                <em>
+                  We can assign multiple styles to an element by separating them with semicolons as shown above.
+                </em>
+              </p>
+
+              <p>
+                As mentioned earlier, there are different ways to add styles.
+                The best practice in web design is to use a styling language such as <strong>CSS</strong> and add the
+                CSS into a separate stylesheet, this technique is called <strong>External CSS</strong> which we will
+                cover in the next chapter <a href="css-basics.html">CSS Basics</a>.
+              </p>
+
+              <p>
+                Attributes like <code>width</code> and <code>height</code> can be added directly to the element, as
+                attributes, while styles such as <strong>color, font, size etc.</strong> needs the <code>style</code>
+                attribute. This technique, shown in above example, is called <strong>Inline CSS</strong>. We can also
+                add styles using <strong>Internal CSS</strong> by defining it in the <code>head</code> section:
+              </p>
+
+              <div class="internal-css">
+                <pre>
+  <code>&lt;!DOCTYPE html&gt;</code>
+  <code>&lt;html&gt;</code>
+  <code>&lt;head&gt;</code>
+    <code>&lt;meta charset="UTF-8"&gt;</code>
+    <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+    <code>&lt;title&gt;Internal CSS&lt;/title&gt;</code>
+
+    <code>&lt;style&gt;</code>
+      <code>body {background-color: powderblue;}</code>
+      <code>h1 {color: blue;}</code>
+      <code>p {color: red;}</code>
+    <code>&lt;/style&gt;</code>
+
+  <code>&lt;/head&gt;</code>
+  <code>&lt;body&gt;</code>
+
+    <code>&lt;h1&gt;This is a heading&lt;/h1&gt;</code>
+    <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+
+  <code>&lt;/body&gt;</code>
+  <code>&lt;/html&gt;</code>
+                </pre>
+              </div>
             </li>
-            <!-- CONTINUE @ https://www.w3schools.com/html/html_attributes.asp -->
+
           </ol>
+          <!-- CONTINUE @ https://www.w3schools.com/html/html_attributes.asp -->
         </ol>
 
       </div> <!--container -->
